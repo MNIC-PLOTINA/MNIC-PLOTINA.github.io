@@ -2,7 +2,7 @@ var renderer	= new THREE.WebGLRenderer({
 		antialias	: true
 	});
 /* Fullscreen */
-	// renderer.setSize( window.innerWidth, window.innerHeight );
+ renderer.setSize( window.innerWidth, window.innerHeight );
 /* Append to HTML */
  document.getElementById("hero").appendChild(renderer.domElement);
 	var onRenderFcts= [];
