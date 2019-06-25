@@ -1,9 +1,158 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>MNIC PLOTINA</title>
-    </head>
-    <body>
-        <p>САЙТ В РАЗРАБОТКЕ</p>
-    </body>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Creawave - creative solutions</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css">
+    <link rel="stylesheet" href="/dist/css/app.css">
+  </head>
+  <body theme="dark">
+    <div id="app">
+      <header>
+        <div class="navs">
+          <div class="navs--left"><a class="menu link" uk-toggle="target: #menu"><span>Меню</span></a></div>
+          <div class="navs--right"><a class="works link" href="#"><span>Работы</span></a></div>
+        </div>
+      </header>
+      <main>
+        <section id="hero">
+          <div class="fullscreen-bg">
+            <video class="fullscreen-bg__video" loop="" muted="" autoplay="" poster="">
+              <source src="/dist/img/dbgcw.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="main-screen">
+            <div class="main-item"></div>
+            <div class="main-logo">
+              <div class="logo-item">
+                <div class="logo"></div>
+              </div>
+            </div>
+            <div class="main-item"></div>
+          </div><a class="scroll-down link" uk-parallax="opacity:1,0;target: #about; viewport: 0.4;" href="#about" uk-scroll>
+            <div class="scroll-down__lines scroll-down__lines_animated"></div></a>
+        </section>
+        <section id="about" uk-scrollspy="target: .an; cls: uk-animation-fade; delay: 200">
+          <div class="wrapper">
+            <h1 class="block-title"> Коротко о нас</h1>
+            <div class="text an">
+              <p>Студия <span>«Creawave» </span>предоставляет услуги начиная с дизайна и заканчивая созданием кроссплатформенного программного обеспечения.</p>
+              <p>Наша команда использует последние технологии и может гарантировать качество.</p>
+            </div>
+          </div>
+        </section>
+        <section id="lastworks">
+          <div class="wrapper">
+            <h1 class="block-title"> новейшие работы</h1>
+            <div class="works">
+              <div class="works_work"><a class="works_work-item" href="#">
+                  <div class="cover" style="background:url('http://stalker-nexus.com/dist/img/bg.png')"> </div>
+                  <div class="info">
+                    <div class="title">Stalker Nexus</div>
+                    <div class="category">Проекты</div>
+                  </div></a></div>
+              <div class="works_work"><a class="works_work-item" href="#">
+                  <div class="cover" style="background:url('https://tympanus.net/Development/DiagonalSlideshow/img/2.jpg')"> </div>
+                  <div class="info">
+                    <div class="title">Golden bridge</div>
+                    <div class="category">Сайты</div>
+                  </div></a></div>
+              <div class="works_work"><a class="works_work-item" href="#">
+                  <div class="cover" style="background:url('https://tympanus.net/Development/DiagonalSlideshow/img/3.jpg')"> </div>
+                  <div class="info">
+                    <div class="title">Тестовая работа</div>
+                    <div class="category">Сайты</div>
+                  </div></a></div>
+              <div class="works_work"><a class="works_work-item" href="#">
+                  <div class="cover" style="background:url('https://tympanus.net/Development/DiagonalSlideshow/img/4.jpg')"> </div>
+                  <div class="info">
+                    <div class="title">Тестовая работа</div>
+                    <div class="category">Тест</div>
+                  </div></a></div>
+              <div class="works_work"><a class="works_work-item" href="#">
+                  <div class="cover" style="background:url('https://tympanus.net/Development/DiagonalSlideshow/img/5.jpg')"> </div>
+                  <div class="info">
+                    <div class="title">Тестовая работа</div>
+                    <div class="category">Тест</div>
+                  </div></a></div>
+              <div class="works_work"><a class="works_work-item" href="#">
+                  <div class="cover" style="background:url('https://tympanus.net/Development/DiagonalSlideshow/img/6.jpg')"> </div>
+                  <div class="info">
+                    <div class="title">Тестовая работа</div>
+                    <div class="category">Тест</div>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+        <section id="reviews"></section>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <div class="copyright">© 2019 Creawave Studio</div>
+          <div class="socials">
+            <li><a class="hover link" href="#" target="_blank"> <span data-hover="перейти">vkontakte</span></a></li>
+            <li><a class="hover link" href="#" target="_blank"> <span data-hover="перейти">facebook</span></a></li>
+            <li><a class="hover link" href="#" target="_blank"> <span data-hover="перейти">instagram</span></a></li>
+          </div>
+        </div>
+      </footer>
+      <div class="uk-modal-full" id="menu" uk-modal="">
+        <div class="uk-modal-dialog">
+          <div class="uk-modal-close-full link" uk-close="">
+            <button>
+              <div class="link"><span>закрыть</span></div>
+            </button>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a class="link" href="#">Главная</a></li>
+              <li><a class="link" href="#">Работы</a></li>
+              <li><a class="link" href="#">О нас</a></li>
+              <li><a class="link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="filters" uk-offcanvas="overlay: true; flip:true">
+        <div class="uk-offcanvas-bar">
+          <ul> 
+            <li class="uk-active" uk-filter-control=""><a class="hover" href="#"><span data-hover="Все фильтры">Все</span></a></li>
+          </ul>
+          <ul>По тегам
+            <li uk-filter-control="[type='videos']"><a href="#">Видео</a></li>
+            <li uk-filter-control="[type='gfxs']"><a href="#">Графика</a></li>
+            <li uk-filter-control="[type='sites']"><a href="#">Сайты</a></li>
+            <li uk-filter-control="[type='projects']"><a href="#">Проекты</a></li>
+          </ul>
+          <ul>По автору
+            <li uk-filter-control="[author='author1']"><a href="#">Шерстнев А.</a></li>
+            <li uk-filter-control="[author='author2']"><a href="#">Ева М.</a></li>
+            <li uk-filter-control="[author='author3']"><a href="#">Денис Л.</a></li>
+            <li uk-filter-control="[author='author4']"><a href="#">Сергей К.</a></li>
+            <li uk-filter-control="[author='author5']"><a href="#">Кирилл П.</a></li>
+            <li uk-filter-control="[author='author6']"><a href="#">Александр М.</a></li>
+            <li uk-filter-control="[author='author7']"><a href="#">Александр Д.</a></li>
+            <li uk-filter-control="[author='author8']"><a href="#">Николай Г.</a></li>
+            <li uk-filter-control="[author='author9']"><a href="#">Лиза П.</a></li>
+            <li uk-filter-control="[author='author10']"><a href="#">Фёдор З.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="magic-cursor">
+      <div id="ball">
+        <div id="hold-event"></div>
+        <div id="ball-loader"></div>
+      </div>
+    </div>
+    <script src="/dist/js/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/HubSpot/pace/v0.5.3/pace.min.js"></script>
+    <script src="/dist/js/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
+    <script src="/dist/js/plugins.js"></script>
+    <script src="/dist/js/app.js"></script>
+  </body>
 </html>
